@@ -24,12 +24,12 @@ def send_gmail(subject: str, body: str, recipients: list[str]) -> str:
     Returns:
         A string "Email sent successfully"
     """
-    sender_email_address = os.environ.get("GMAIL_ADDRESS")
+    sender_email_address = os.environ["GMAIL_ADDRESS"]
     if not is_valid_email(sender_email_address):
         raise ValueError("Sender email is not a valid email address")
 
     sender_display_name = os.environ.get("GMAIL_DISPLAY_NAME")
-    password = os.environ.get("GMAIL_PASSWORD").replace(" ", "")
+    password = os.environ["GMAIL_PASSWORD"].replace(" ", "")
     recipients = [email for email in recipients if is_valid_email(email)]
 
     if not recipients:
