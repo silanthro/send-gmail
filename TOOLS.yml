@@ -1,0 +1,12 @@
+description: A tool for sending simple plaintext emails via Gmail.
+
+tools:
+- tools.send_gmail
+
+env_vars:
+- GMAIL_ADDRESS:
+  - tools.send_gmail
+- GMAIL_PASSWORD:
+  - tools.send_gmail
+- GMAIL_DISPLAY_NAME:
+  - tools.send_gmail
