@@ -1,4 +1,4 @@
-[project]
+[index]
 
 description = "A tool for sending simple plaintext emails via Gmail."
 
