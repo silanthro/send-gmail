@@ -1,0 +1,7 @@
+[project]
+
+description = "A tool for sending simple plaintext emails via Gmail."
+
+tools = [
+    "tools.send_gmail",
+]
